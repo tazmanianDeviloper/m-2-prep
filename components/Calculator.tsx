@@ -3,17 +3,28 @@
 import {useState} from "react";
 import {StyledButtons, StyledDiv, StyledInputs} from "@/styled-components/styled-components";
 
-
 export default function Calculator() {
     const [firstNumber, setFirstNumber] = useState(0);
     const [secondNumber, setSecondNumber] = useState(0);
     const [res, setRes] = useState(0);
 
-    const handleAddition = () => {
+    function handleAddition(){
         setRes(firstNumber + secondNumber);
-    };
+    }
 
     // Add the 3 functions, each for a button (math operation).
+
+    function handleSub(){
+        setRes(firstNumber - secondNumber);
+    }
+
+    function handleMul(){
+        setRes(firstNumber * secondNumber);
+    }
+
+    function handleDiv(){
+        setRes(firstNumber / secondNumber);
+    }
 
     return (
         <StyledDiv>
@@ -35,6 +46,9 @@ export default function Calculator() {
             <StyledButtons onClick={handleAddition}>+</StyledButtons>
 
             {/*Add the 3 other buttons here*/}
+            <StyledButtons onClick={handleSub}>-</StyledButtons>
+            <StyledButtons onClick={handleMul}>*</StyledButtons>
+            <StyledButtons onClick={handleDiv}>/</StyledButtons>
 
             <p>Result: {res}</p>
         </StyledDiv>

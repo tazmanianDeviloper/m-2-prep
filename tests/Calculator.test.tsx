@@ -22,7 +22,6 @@ describe("Calculator Component", () => {
 
         expect(screen.getByText(/Result:/i).textContent).toBe("Result: 5");
     });
-
     test("Subtracting displays the correct difference", () => {
         render(<Calculator />);
 
@@ -37,7 +36,6 @@ describe("Calculator Component", () => {
 
         expect(screen.getByText(/Result:/i).textContent).toBe("Result: 5");
     });
-
     test("Multiplying displays the correct product", () => {
         render(<Calculator />);
 
@@ -52,7 +50,6 @@ describe("Calculator Component", () => {
 
         expect(screen.getByText(/Result:/i).textContent).toBe("Result: 12");
     });
-
     test("Dividing displays the correct quotient", () => {
         render(<Calculator />);
 
