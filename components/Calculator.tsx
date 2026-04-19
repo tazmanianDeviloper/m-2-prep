@@ -14,17 +14,6 @@ export default function Calculator() {
 
     // Add the 3 functions, each for a button (math operation).
 
-    function handleSub(){
-        setRes(firstNumber - secondNumber);
-    }
-
-    function handleMul(){
-        setRes(firstNumber * secondNumber);
-    }
-
-    function handleDiv(){
-        setRes(firstNumber / secondNumber);
-    }
 
     return (
         <StyledDiv>
@@ -46,9 +35,7 @@ export default function Calculator() {
             <StyledButtons onClick={handleAddition}>+</StyledButtons>
 
             {/*Add the 3 other buttons here*/}
-            <StyledButtons onClick={handleSub}>-</StyledButtons>
-            <StyledButtons onClick={handleMul}>*</StyledButtons>
-            <StyledButtons onClick={handleDiv}>/</StyledButtons>
+
 
             <p>Result: {res}</p>
         </StyledDiv>
