@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledDiv=styled.div`
-    width: 25vw;
+    width: 35vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -18,5 +18,7 @@ export const StyledButtons= styled.button`
 `;
 
 export const StyledInputs= styled.input`
+    width: 80%;
+    margin: 0 auto;
     border: brown solid 5px;
 `;
