@@ -1,0 +1,53 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Calculator Component > renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bRKDuR cGEudQ"
+  >
+    <label
+      for="first"
+    >
+      Enter a number: 
+    </label>
+    <input
+      class="sc-fhHczv beOmBJ"
+      id="first"
+      value=""
+    />
+    <label
+      for="second"
+    >
+      Enter another number: 
+    </label>
+    <input
+      class="sc-fhHczv beOmBJ"
+      id="second"
+      value=""
+    />
+    <button
+      class="sc-hvigdm fZSzew"
+    >
+      +
+    </button>
+    <button
+      class="sc-hvigdm fZSzew"
+    >
+      -
+    </button>
+    <button
+      class="sc-hvigdm fZSzew"
+    >
+      *
+    </button>
+    <button
+      class="sc-hvigdm fZSzew"
+    >
+      /
+    </button>
+    <p>
+      Result: 0
+    </p>
+  </div>
+</DocumentFragment>
+`;
